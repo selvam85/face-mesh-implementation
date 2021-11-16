@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Face Mesh Implementation</title>
+        <style>
+            .canvas-wrapper {
+                display: inline-block;
+                vertical-align: top;
+            }
+            canvas {
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate3d(-50%, -50%, 0);
+            }
+        </style>
+    </head>
+    
+    <body>    
+        <div id="main">
+            <div class="container">
+              <div class="canvas-wrapper">
+                <canvas id="output"></canvas>
+                <video id="video" playsinline style="
+                  -webkit-transform: scaleX(-1);
+                  transform: scaleX(-1);
+                  visibility: hidden;
+                  width: auto;
+                  height: auto;
+                  ">
+                </video>
+              </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/@tensorflow/tfjs-core@2.4.0/dist/tf-core.js"></script>
+        <script src="https://unpkg.com/@tensorflow/tfjs-converter@2.4.0/dist/tf-converter.js"></script>
+        <script src="https://unpkg.com/@tensorflow/tfjs-backend-webgl@2.4.0/dist/tf-backend-webgl.js"></script>
+        <script src="https://unpkg.com/@tensorflow-models/face-landmarks-detection@0.0.1/dist/face-landmarks-detection.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
