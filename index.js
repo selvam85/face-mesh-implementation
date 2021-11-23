@@ -187,7 +187,7 @@ function isMobile() {
 const state = {
     backend: 'webgl',
     maxFaces: 1,
-    triangulateMesh: false,
+    triangulateMesh: true,
     predictIrises: false
 };
 
@@ -255,8 +255,8 @@ async function renderPrediction() {
             console.log(`prediction.annotations.silhoutte length: ${prediction.annotations.silhouette.length}`);
             n++;
         }    
-        const keypoints = prediction.mesh;
-        //const keypoints = prediction.scaledMesh;
+        //const keypoints = prediction.mesh;
+        const keypoints = prediction.scaledMesh;
         /* const keypoints = prediction.annotations.lipsUpperOuter
                             .concat(
                                 prediction.annotations.lipsLowerOuter, 

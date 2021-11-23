@@ -1,0 +1,30 @@
+{
+    "faceInViewConfidence": 1,
+    "boundingBox": { //Rectangle box marking the face location
+        "topLeft": [154.00487015594797, 39.17676100684986],
+        "bottomRight": [417.0680454140489, 312.04960656387976]
+    },
+    "mesh": [ //Raw coordinates as per the input provided to the model
+        [96.92637634277344, 100.86282348632812, -22.395742416381836],
+        [95.65723419189453, 80.44485473632812, -30.29779624938965],
+        //... remaining 466 points 
+    ],
+    "scaledMesh": [ //Scaled coordinates to the video frames height and width
+        [289.60650634765625, 200.98089599609375, -22.395742416381836],
+        [287.8445739746094, 173.0938720703125, -30.29779624938965],
+        //... remaining 466 points
+    ],
+    "annotations": { // Consists of the break up of the 468 coordinates per each of the landmark
+        "silhouette": [ //Consists of the set of coordinates marking the face boundary
+            [279.8673400878906, 84.68767547607422, 16.111000061035156],
+            [302.95458984375, 84.65557098388672, 17.189395904541016],
+            //... remaining points in the silhouette object
+        ],
+        "lipsUpperOuter": [
+            [257.8961181640625, 216.29501342773438, -7.728461265563965],
+            [259.72503662109375, 213.11500549316406, -11.206592559814453],
+        ],
+        //.. Other landmarks and its specific set of coordinates 
+    }
+}
+
